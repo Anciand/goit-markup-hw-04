@@ -17,6 +17,7 @@ footer: background - #2F303A; logo: #2196F3 + #000000; address text - #FFFFFF; c
   --background-hero: #2f303a;
   --background-section: #f5f4fa;
   --decorative-color: #2196f3;
+  --btn-hover: #188ce8;
   --title: #212121;
   --text-color: #757575;
   --btns-color: #f5f4fa;
@@ -217,8 +218,8 @@ img {
 }
 .order-button:hover,
 .order-button:focus {
-  color: var(--decorative-color);
-  background-color: var(--background);
+  color: var(--background);
+  background-color: var(--btn-hover);
 }
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
