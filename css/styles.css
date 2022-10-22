@@ -134,7 +134,6 @@ img {
 .nav-link {
   display: block;
   color: var(--title);
-  font-weight: 500;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.15;
@@ -204,7 +203,7 @@ img {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   color: var(--background);
   background-color: var(--decorative-color);
@@ -213,10 +212,6 @@ img {
   margin-left: auto;
   width: 216px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 10px 32px; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -351,17 +346,17 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--text-color);
+  color: var(--clients-border);
+  background-color: var(--background);
 }
-.icon-social .icon {
-  fill: var(--clients-border);
-}
+
 .icon-social:hover,
 .icon-social:focus {
   background-color: var(--decorative-color);
+  color: var(--background);
 }
-.icon-social .icon:hover {
-  fill: var(--background);
+.icon-social .icon {
+  fill: currentColor;
 }
 /* ------------- */
 
@@ -372,24 +367,25 @@ img {
 }
 .client {
   display: flex;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--clients-border);
-  border-radius: 4px;
   padding: 0;
   justify-content: center;
   align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  color: var(--clients-border);
+  background-color: var(--background);
+  border: 1px solid var(--clients-border);
 }
-.icon {
-  fill: var(--clients-border);
-}
+
 .client:hover,
 .client:focus {
   border: 1px solid var(--decorative-color);
+  color: var(--decorative-color);
 }
-.client .icon:hover,
-.client .icon:focus {
-  fill: var(--decorative-color);
+.client .icon {
+  fill: currentColor;
 }
 /* ------------- */
 
@@ -464,13 +460,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--background);
 }
 .icon-social-footer:hover,
 .icon-social-footer:focus {
   background-color: var(--decorative-color);
+  color: var(--background);
 }
 .footer-icon {
-  fill: var(--background);
+  fill: currentColor;
 }
 /* ------------- */
 
