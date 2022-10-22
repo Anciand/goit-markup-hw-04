@@ -100,12 +100,18 @@ img {
   margin-left: auto;
   gap: 50px;
 }
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
 .contact-icon:hover,
 .contact-icon:focus {
   color: var(--decorative-color);
 }
 .contact-icon .icon {
   fill: currentColor;
+  margin-right: 10px;
+  padding: 0;
 }
 /* logo styles */
 .logo {
@@ -128,6 +134,8 @@ img {
   display: block;
   color: var(--title);
   font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.15;
   letter-spacing: 0.02em;
 
@@ -142,6 +150,7 @@ img {
   display: block;
   color: var(--text-color);
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
 
