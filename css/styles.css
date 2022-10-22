@@ -211,7 +211,12 @@ img {
   cursor: pointer;
   margin-right: auto;
   margin-left: auto;
-  padding: 10px 32px;
+  width: 216px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px 32px; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
@@ -239,8 +244,9 @@ img {
   display: flex;
   gap: 30px;
 }
-.feature-card .header {
+.features-item .header {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.12;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -249,19 +255,24 @@ img {
   margin-bottom: 10px;
   color: var(--title);
 }
-.feature-card .text {
+.features-item .text {
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
 }
-.feature-card .thumb {
+.features-item .thumb {
   width: 270px;
   height: 120px;
   background: var(--background-section);
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 25px 100px; */
 }
 /* ------------- */
 
@@ -334,22 +345,19 @@ img {
   align-items: center;
 }
 .icon-social {
+  display: flex;
   width: 44px;
   height: 44px;
-  padding: 0;
-  text-align: center;
-  border-radius: 50%;
-}
-.icon-social .icon {
   align-items: center;
-  padding: 12px;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--text-color);
 }
 .icon-social:hover,
 .icon-social:focus {
   background-color: var(--decorative-color);
 }
-.icon-social .icon:hover,
-.icon-social .icon:focus {
+.icon-social .icon {
   fill: var(--background);
 }
 /* ------------- */
@@ -360,6 +368,7 @@ img {
   gap: 30px;
 }
 .client {
+  display: flex;
   width: 170px;
   height: 92px;
   border: 1px solid var(--clients-border);
@@ -389,7 +398,7 @@ img {
 }
 .footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer a {
   text-decoration: none;
@@ -445,10 +454,13 @@ img {
 .icon-social-footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  align-items: center;
   width: 44px;
   height: 44px;
   padding: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-social-footer:hover,
 .icon-social-footer:focus {
